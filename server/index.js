@@ -6,6 +6,9 @@ const path = require('path');
 
 const db = require('./queries');
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 const PORT = 9001;
 
 
