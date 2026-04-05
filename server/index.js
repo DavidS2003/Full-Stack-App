@@ -24,6 +24,7 @@ app.get('/', (req, res) => {
 // ));
 
 app.get('/links', db.getLinks);
+app.post('/new', db.createLink);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
